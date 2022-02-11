@@ -1,6 +1,7 @@
 body {
 	display: flex;
 	place-items: center;
+	background-color: black;
 }
 
 button {
@@ -19,7 +20,7 @@ svg {
 #app {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 0 2rem;
 	width: 100%;
 	font-weight: normal;
 
@@ -30,10 +31,21 @@ svg {
 	align-items: center;
 }
 
-.wrapper-parent {
+.wrapper-fill {
 	align-items:stretch;
 	justify-content: space-between;
 	width:100%;
+}
+
+.icon {
+	width: 1.3rem;
+	height: 1.3rem;
+	fill: white;
+	&:hover {
+		& svg {
+			animation: hop 0.3s infinite;
+		}
+	}
 }
 
 @keyframes hop {
