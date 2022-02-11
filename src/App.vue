@@ -1,119 +1,76 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+	<header class="wrapper wrapper-parent">
+		<img alt="Logo" class="logo" src="@/assets/icons/logo.svg"/>
+		<form class="wrapper search-box">
+			<input placeholder="Search" class="search-input">
+			<div class="wrapper">
+				<div class="search-button">
+					<button>					
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="512" height="512">
+							<g>
+								<path d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/>
+							</g>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</form>
+	</header>
 </template>
 
-<style>
-@import '@/assets/base.css';
+<style lang="scss">
+	@import '@/assets/css/reset.css';
+	@import '@/assets/css/base.scss';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+	.logo {
+		width: 10rem;
+		margin: 0 1rem 0 0;
+	}
 
-  font-weight: normal;
-}
+	.search-box {
+		align-items: stretch;
+		background-color: rgb(219, 94, 94);
+		padding: 0 1rem;
+		border-radius: 2rem;
+		width:100%;
+		transition: 0.15s;
+		max-width: 500px;
+		&:focus-within {
+			box-shadow: 0 0 7px 0 gray;
+		}&:hover {
+			box-shadow: 0 0 7px 0 gray;
+		}
+	}
 
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+	.search-input {
+		border: 0;
+		padding: 0;
+		color: white;
+		background-color: rgb(219, 94, 94);
+		flex: 1;
+		&::placeholder {
+			color:white;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+	.search-button {
+		width: 1.3rem;
+		height: 1.3rem;
+		fill: white;
+		&:hover {
+			
+			& svg {
+				animation: hop 0.3s infinite;
+			}
+			
+		}
+	}
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
