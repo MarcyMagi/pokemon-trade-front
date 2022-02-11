@@ -1,8 +1,8 @@
 <script setup>
 
 import logoSVG from '../components/icons/logoSVG.vue'
-import NavBox from '../components/NavBox.vue'
-import SearchBox from '../components/SearchBox.vue'
+import NavBox from '../components/header/NavBox.vue'
+import SearchBox from '../components/header/SearchBox.vue'
 
 </script>
 
@@ -22,6 +22,7 @@ header {
 }
 
 .logo {
+	min-width: 10rem;
 	width: 10rem;
 }
 </style>

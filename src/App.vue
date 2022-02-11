@@ -3,15 +3,10 @@ import DefaultHeader from './views/DefaultHeader.vue'
 </script>
 
 <template>
-	<div>
-		<DefaultHeader/>
-	</div>
+	<DefaultHeader/>
 </template>
 
 <style lang="scss">
 	@import '@/assets/css/reset.css';
 	@import '@/assets/css/base.scss';
-
-	
-
 </style>
