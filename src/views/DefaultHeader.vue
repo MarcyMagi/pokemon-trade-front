@@ -8,19 +8,24 @@ import TagBox from '../components/header/TagBox.vue'
 </script>
 
 <template>
-	<header>
+	<header class="thin">
 		<div class="wrapper wrapper-fill">
 			<logoSVG class="logo"/>
 			<SearchBox/>
 			<NavBox/>
 		</div>
 		<TagBox/>
+		<hr>
 	</header>
 </template>
 
 <style lang="scss" scoped>
 header {
-	padding: 2rem 0;
+	padding: 2rem 0 0 0;
+}
+
+hr {
+	width: 100%;
 }
 
 .logo {

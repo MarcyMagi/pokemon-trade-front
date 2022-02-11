@@ -26,6 +26,6 @@ export default {
 		width: 100%;
 		box-sizing: border-box;
 		justify-content: flex-start;
-		padding: 1rem;
+		padding: 1rem 0;
 	}
 </style>
