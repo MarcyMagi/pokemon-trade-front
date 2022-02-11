@@ -22,4 +22,7 @@ import MessagesSVG from '../icons/messagesSVG.vue'
 	a {
 		margin : 0 1rem 0 0
 	}
+	a:hover {
+		cursor: pointer;
+	}
 </style>

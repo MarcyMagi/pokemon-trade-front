@@ -3,6 +3,7 @@
 import logoSVG from '../components/icons/logoSVG.vue'
 import NavBox from '../components/header/NavBox.vue'
 import SearchBox from '../components/header/SearchBox.vue'
+import TagBox from '../components/header/TagBox.vue'
 
 </script>
 
@@ -13,6 +14,7 @@ import SearchBox from '../components/header/SearchBox.vue'
 			<SearchBox/>
 			<NavBox/>
 		</div>
+		<TagBox/>
 	</header>
 </template>
 

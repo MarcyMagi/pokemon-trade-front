@@ -48,4 +48,11 @@ import SearchSVG from '../icons/searchSVG.vue'
 a {
 	margin: 0 1rem 0 0
 }
+
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 </style>
