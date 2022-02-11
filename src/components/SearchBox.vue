@@ -34,6 +34,7 @@ import SearchSVG from './icons/searchSVG.vue'
 		padding: 0;
 		color: white;
 		background-color: transparent;
+		font-family: 'Roboto', sans-serif;
 		flex: 1;
 		&::placeholder {
 			color:white;
