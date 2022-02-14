@@ -1,7 +1,19 @@
-<script setup>
+<script>
+import { defineComponent } from 'vue'
+
 import UserSVG from './icons/userSVG.vue'
 import NotificationSVG from './icons/notificationSVG.vue'
 import MessagesSVG from './icons/messagesSVG.vue'
+
+export default defineComponent({
+	name: 'NavBox',
+	components: {
+		UserSVG,
+		NotificationSVG,
+		MessagesSVG
+	}
+})
+
 </script>
 
 <template>

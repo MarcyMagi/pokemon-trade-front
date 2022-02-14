@@ -1,9 +1,21 @@
-<script setup>
+<script>
 
+import { defineComponent } from 'vue'
 import logoSVG from './icons/logoSVG.vue'
 import NavBox from './NavBox.vue'
 import SearchBox from './SearchBox.vue'
 import TagBox from './TagBox.vue'
+
+export default defineComponent({
+	name: 'DefaultHeader',
+	components: {
+		logoSVG,
+		NavBox,
+		SearchBox,
+		TagBox
+	}
+})
+
 
 </script>
 

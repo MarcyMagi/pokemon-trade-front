@@ -1,5 +1,14 @@
-<script setup>
+<script>
+import { defineComponent } from 'vue'
+
 import SearchSVG from './icons/searchSVG.vue'
+
+export default defineComponent({
+	name: 'SearchBox',
+	components: {
+		SearchSVG
+	}
+})
 </script>
 
 <template>

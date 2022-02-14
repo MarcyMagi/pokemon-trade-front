@@ -1,19 +1,22 @@
-<script setup>
-import TagContainer from './TagContainer.vue'
-
-</script>
-
 <script>
 
-export default {
+import { defineComponent } from 'vue'
+
+import TagContainer from './TagContainer.vue'
+
+export default defineComponent({
+	name: 'TagBox',
+	components: {
+		TagContainer
+	},
 	data() {
 		return {
 			tags: [{label: 'BDSP'}, {label: 'SWSH'}, {label: 'Tradeback'}, {label: 'Home'}, {label: 'SMUSUM'}, {label: 'LGPE'}, {label: 'XYORAS'}, {label: 'Shiny'}]
 		}
 	},
-}
-</script>
+})
 
+</script>
 
 <template>
 	<nav class="wrapper wrapper-fill thin">
