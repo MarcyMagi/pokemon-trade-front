@@ -1,5 +1,5 @@
 <script setup>
-import TagContainer from '../TagContainer.vue'
+import TagContainer from './TagContainer.vue'
 
 </script>
 
@@ -16,16 +16,16 @@ export default {
 
 
 <template>
-	<nav class="wrapper wrapper-fill">
+	<nav class="wrapper wrapper-fill thin">
 		<TagContainer v-for="tag of tags" :key="tags.indexOf(tag)" :label="tag.label"/>
 	</nav>
 </template>
 
 <style lang="scss" scoped>
 	nav {
-		width: 100%;
 		box-sizing: border-box;
 		justify-content: flex-start;
 		padding: 1rem 0;
+		overflow-x: scroll;
 	}
 </style>

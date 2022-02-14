@@ -1,9 +1,9 @@
 <script setup>
 
-import logoSVG from '../components/icons/logoSVG.vue'
-import NavBox from '../components/header/NavBox.vue'
-import SearchBox from '../components/header/SearchBox.vue'
-import TagBox from '../components/header/TagBox.vue'
+import logoSVG from './icons/logoSVG.vue'
+import NavBox from './NavBox.vue'
+import SearchBox from './SearchBox.vue'
+import TagBox from './TagBox.vue'
 
 </script>
 
@@ -15,7 +15,7 @@ import TagBox from '../components/header/TagBox.vue'
 			<NavBox/>
 		</div>
 		<TagBox/>
-		<hr>
+		<hr/>
 	</header>
 </template>
 
@@ -26,6 +26,9 @@ header {
 
 hr {
 	width: 100%;
+	border: 0;
+	padding: 0.5px 0;
+	background-color: white;
 }
 
 .logo {

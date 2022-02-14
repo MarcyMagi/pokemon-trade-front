@@ -1,5 +1,5 @@
 <script setup>
-import SearchSVG from '../icons/searchSVG.vue'
+import SearchSVG from './icons/searchSVG.vue'
 </script>
 
 <template>

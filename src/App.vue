@@ -1,7 +1,7 @@
 <script setup>
-import DefaultHeader from './views/DefaultHeader.vue'
-import DefaultMain from './views/DefaultMain.vue'
-import DefaultFooter from './views/DefaultFooter.vue'
+import DefaultHeader from './components/DefaultHeader.vue'
+import DefaultMain from './components/DefaultMain.vue'
+import DefaultFooter from './components/DefaultFooter.vue'
 </script>
 
 <template>
