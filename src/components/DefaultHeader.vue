@@ -21,11 +21,11 @@ export default defineComponent({
 
 <template>
 	<header class="thin">
-		<div class="wrapper wrapper-fill">
+		<nav class="wrapper wrapper-fill">
 			<logoSVG class="logo"/>
 			<SearchBox/>
 			<NavBox/>
-		</div>
+		</nav>
 		<TagBox/>
 		<hr/>
 	</header>

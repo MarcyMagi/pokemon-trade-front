@@ -18,13 +18,13 @@ export default defineComponent({
 
 <template>
 	<nav class="wrapper">
-		<a class="icon">
+		<a class="icon animated">
 			<MessagesSVG/>
 		</a>
-		<a class="icon">
+		<a class="icon animated">
 			<NotificationSVG/>
 		</a>
-		<a class="icon">
+		<a class="icon animated">
 			<UserSVG/>
 		</a>
 	</nav>

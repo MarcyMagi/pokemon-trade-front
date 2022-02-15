@@ -27,7 +27,7 @@ button {
 }
 
 svg {
-	width: 100%;
+	width: auto;
 	height: 100%;
 }
 
@@ -47,13 +47,29 @@ svg {
 	width:100%;
 }
 
+.img-container {
+	flex-grow: 1;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	
+	svg {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
 .icon {
 	width: 1.3rem;
 	height: 1.3rem;
 	fill: white;
 	&:hover {
-		& svg {
-			animation: hop 0.3s infinite;
+		.animated {
+			& svg {
+				animation: hop 0.3s infinite;
+			}
 		}
 	}
 }

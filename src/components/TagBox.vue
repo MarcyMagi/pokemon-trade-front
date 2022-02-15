@@ -20,7 +20,7 @@ export default defineComponent({
 
 <template>
 	<nav class="wrapper wrapper-fill thin">
-		<TagContainer v-for="tag of tags" :key="tags.indexOf(tag)" :label="tag.label"/>
+		<TagContainer v-for="(tag, index) of tags" :key="index" :label="tag.label"/>
 	</nav>
 </template>
 
@@ -29,6 +29,6 @@ export default defineComponent({
 		box-sizing: border-box;
 		justify-content: flex-start;
 		padding: 1rem 0;
-		overflow-x: scroll;
+		overflow-x: hidden;
 	}
 </style>
