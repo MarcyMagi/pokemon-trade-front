@@ -21,7 +21,7 @@ export default defineComponent({
 		<router-link to="/" class="icon animated">
 			<MessagesSVG/>
 		</router-link>
-		<router-link to="/Test" class="icon animated">
+		<router-link to="/" class="icon animated">
 			<NotificationSVG/>
 		</router-link>
 		<router-link to="/" class="icon animated">
