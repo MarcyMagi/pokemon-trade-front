@@ -1,13 +1,13 @@
 <script>
 import { defineComponent } from 'vue'
 import DefaultHeader from './components/DefaultHeader.vue'
-import DefaultMain from './components/DefaultMain.vue'
+import PokemonDisplay from './components/PokemonDisplay.vue'
 import DefaultFooter from './components/DefaultFooter.vue'
 export default defineComponent({
 	name: 'App',
 	components: {
 		DefaultHeader,
-		DefaultMain,
+		PokemonDisplay,
 		DefaultFooter,
 	}
 })
@@ -15,7 +15,7 @@ export default defineComponent({
 
 <template>
 	<DefaultHeader/> 
-	<DefaultMain/>
+	<PokemonDisplay/>
 	<DefaultFooter/>
 </template>
  

@@ -12,20 +12,18 @@ export default defineComponent({
 </script>
 
 <template>
-<form class="wrapper search-box">
-	<input placeholder="Search" class="search-input">
+<form class="wrapper box">
+	<input placeholder="Search" class="input">
 	<div class="wrapper">
-		<div class="search-button icon">
-			<button>
-				<SearchSVG/>
-			</button>
-		</div>
+		<button class="icon animated">
+			<SearchSVG/>
+		</button>
 	</div>
 </form>
 </template>
 
 <style lang="scss" scoped>
-.search-box {
+.box {
 	align-items: stretch;
 	background-color: rgb(219, 94, 94);
 	padding: 0 1rem;
@@ -39,7 +37,7 @@ export default defineComponent({
 	}
 }
 
-.search-input {
+.input {
 	border: 0;
 	padding: 0;
 	color: white;
@@ -58,10 +56,13 @@ a {
 	margin: 0 1rem 0 0
 }
 
-button {
-	&:hover {
-		cursor: pointer;
+.button {
+	button {
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
+
 
 </style>

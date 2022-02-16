@@ -52,6 +52,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 	.container {
+		min-width: 10rem;
+		min-height: 12rem;
 		width: 10rem;
 		height: 12rem;
 		background-color: darkblue;
@@ -64,7 +66,7 @@ export default defineComponent({
 		&:hover {
 			cursor: pointer;
 			& .img-container { 
-				transform: rotate(-5deg);
+				transform: rotate(5deg);
 				transition: 0.25s;
 				animation: happy 1s infinite 0.25s;
 			}
@@ -79,13 +81,13 @@ export default defineComponent({
 
 	@keyframes happy {
 		0% {
-			transform: rotate(-5deg)
-		}
-		50% {
 			transform: rotate(5deg)
 		}
-		100% {
+		50% {
 			transform: rotate(-5deg)
+		}
+		100% {
+			transform: rotate(5deg)
 		}
 	}
 
