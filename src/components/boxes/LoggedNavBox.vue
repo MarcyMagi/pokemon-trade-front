@@ -6,7 +6,7 @@ import NotificationSVG from '../icons/notificationSVG.vue'
 import MessagesSVG from '../icons/messagesSVG.vue'
 
 export default defineComponent({
-	name: 'NavBox',
+	name: 'UnloggedNavBox',
 	components: {
 		UserSVG,
 		NotificationSVG,
@@ -24,7 +24,7 @@ export default defineComponent({
 		<router-link to="/" class="icon animated">
 			<NotificationSVG/>
 		</router-link>
-		<router-link to="/" class="icon animated">
+		<router-link to="/Login" class="icon animated">
 			<UserSVG/>
 		</router-link>
 	</nav>

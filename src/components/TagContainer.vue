@@ -15,7 +15,7 @@ export default defineComponent({
 	div {
 		min-width: 3rem;
 		min-height: 2rem;
-		padding: 0 .5rem;
+		padding: 0 1rem;
 		background-color: aquamarine;
 		border-radius: 1rem;
 		color: darkslategrey;

@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import ViewPokemonShowcase from '../views/ViewPokemonShowcase.vue'
+import ViewLogin from '../views/ViewLogin.vue'
 
 const routes = [
 	{
@@ -8,9 +9,9 @@ const routes = [
 		component: ViewPokemonShowcase,
 	},
 	{
-		path: '/Login',
+		path: '/login',
 		name: 'Login',
-		component: ViewPokemonShowcase,
+		component: ViewLogin,
 	}, 
 ]
 

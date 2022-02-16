@@ -2,7 +2,8 @@
 
 import { defineComponent } from 'vue'
 import logoSVG from '../components/icons/logoSVG.vue'
-import NavBox from '../components/boxes/NavBox.vue'
+import LoggedNavBox from '../components/boxes/LoggedNavBox.vue'
+import UnloggedNavBox from '../components/boxes/UnloggedNavBox.vue'
 import SearchBox from '../components/boxes/SearchBox.vue'
 import TagBox from '../components/boxes/TagBox.vue'
 
@@ -10,9 +11,16 @@ export default defineComponent({
 	name: 'DefaultHeader',
 	components: {
 		logoSVG,
-		NavBox,
+		LoggedNavBox,
+		UnloggedNavBox,
 		SearchBox,
 		TagBox
+	},
+	data() {
+		return {
+			logged: false
+		}
+
 	}
 })
 
@@ -21,11 +29,12 @@ export default defineComponent({
 
 <template>
 	<header class="thin">
-		<nav class="wrapper wrapper-fill">
+		<div class="wrapper wrapper-fill">
 			<logoSVG class="logo"/>
 			<SearchBox/>
-			<NavBox/>
-		</nav>
+			<LoggedNavBox v-if="logged"/>
+			<UnloggedNavBox v-else/>
+		</div>
 		<TagBox/>
 		<hr/>
 	</header>

@@ -15,7 +15,7 @@ export default defineComponent({
 <form class="wrapper box">
 	<input placeholder="Search" class="input">
 	<div class="wrapper">
-		<button class="icon animated">
+		<button class="icon animated" type="submit">
 			<SearchSVG/>
 		</button>
 	</div>
@@ -55,14 +55,5 @@ export default defineComponent({
 a {
 	margin: 0 1rem 0 0
 }
-
-.button {
-	button {
-		&:hover {
-			cursor: pointer;
-		}
-	}
-}
-
 
 </style>

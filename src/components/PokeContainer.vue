@@ -64,7 +64,6 @@ export default defineComponent({
 		flex-direction: column;
 		align-items:center;
 		&:hover {
-			cursor: pointer;
 			& .img-container { 
 				transform: rotate(5deg);
 				transition: 0.25s;
