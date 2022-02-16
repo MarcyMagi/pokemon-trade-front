@@ -2,7 +2,7 @@
 
 import { defineComponent } from 'vue'
 
-import TagContainer from './TagContainer.vue'
+import TagContainer from '../TagContainer.vue'
 
 export default defineComponent({
 	name: 'TagBox',

@@ -1,7 +1,7 @@
 <script>
 import { defineComponent } from 'vue'
 
-import SearchSVG from './icons/searchSVG.vue'
+import SearchSVG from '../icons/searchSVG.vue'
 
 export default defineComponent({
 	name: 'SearchBox',

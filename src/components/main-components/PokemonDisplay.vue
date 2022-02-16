@@ -7,7 +7,7 @@
 <script>
 import { defineComponent } from 'vue'
 
-import PokeContainer from './PokeContainer.vue'
+import PokeContainer from '../PokeContainer.vue'
 
 export default defineComponent({
 	name: 'PokemonDisplay',
