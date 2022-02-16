@@ -1,20 +1,20 @@
 <script>
 import { defineComponent } from 'vue'
-import DefaultHeader from './views/DefaultHeader.vue'
-import DefaultFooter from './views/DefaultFooter.vue'
+import ViewHeader from './views/ViewHeader.vue'
+import ViewFooter from './views/ViewFooter.vue'
 export default defineComponent({
 	name: 'App',
 	components: {
-		DefaultHeader,
-		DefaultFooter,
+		ViewHeader,
+		ViewFooter,
 	}
 })
 </script>
 
 <template>
-	<DefaultHeader/> 
+	<ViewHeader/> 
 	<router-view/>
-	<DefaultFooter/>
+	<ViewFooter/>
 </template>
  
 <style lang="scss">
