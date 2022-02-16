@@ -18,15 +18,15 @@ export default defineComponent({
 
 <template>
 	<nav class="wrapper">
-		<a class="icon animated">
+		<router-link to="/" class="icon animated">
 			<MessagesSVG/>
-		</a>
-		<a class="icon animated">
+		</router-link>
+		<router-link to="/Test" class="icon animated">
 			<NotificationSVG/>
-		</a>
-		<a class="icon animated">
+		</router-link>
+		<router-link to="/" class="icon animated">
 			<UserSVG/>
-		</a>
+		</router-link>
 	</nav>
 </template>
 
