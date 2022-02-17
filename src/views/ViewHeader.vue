@@ -21,6 +21,11 @@ export default defineComponent({
 			logged: false
 		}
 
+	},
+	methods: {
+		changeStates(state) {
+			this.logged = state
+		}
 	}
 })
 
@@ -30,10 +35,12 @@ export default defineComponent({
 <template>
 	<header class="thin">
 		<div class="wrapper wrapper-fill">
-			<logoSVG class="logo"/>
+			<router-link to="/" class="logo">
+				<logoSVG/>
+			</router-link>
 			<SearchBox/>
-			<LoggedNavBox v-if="logged"/>
-			<UnloggedNavBox v-else/>
+			<LoggedNavBox @onLoginStateChange="changeStates" v-if="logged"/>
+			<UnloggedNavBox @onLoginStateChange="changeStates" v-else/>
 		</div>
 		<TagBox/>
 		<hr/>
@@ -55,5 +62,8 @@ hr {
 .logo {
 	min-width: 10rem;
 	width: 10rem;
+	svg {
+		width:100%;
+	}
 }
 </style>

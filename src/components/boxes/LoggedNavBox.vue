@@ -11,6 +11,12 @@ export default defineComponent({
 		UserSVG,
 		NotificationSVG,
 		MessagesSVG
+	},
+	emits: ['onLoginStateChange'],
+	methods: {
+		changeLoginState() {
+			this.$emit('onLoginStateChange', false)
+		}
 	}
 })
 
@@ -18,13 +24,13 @@ export default defineComponent({
 
 <template>
 	<nav class="wrapper">
-		<router-link to="/" class="icon animated">
+		<router-link to="/" class="icon animated" @click="changeLoginState()">
 			<MessagesSVG/>
 		</router-link>
 		<router-link to="/" class="icon animated">
 			<NotificationSVG/>
 		</router-link>
-		<router-link to="/Login" class="icon animated">
+		<router-link to="/" class="icon animated">
 			<UserSVG/>
 		</router-link>
 	</nav>

@@ -7,9 +7,7 @@
 				<input placeholder="Username / Email" type="text">
 				<input placeholder="Password" type="password">
 			</div>
-			<div class="button-box">
-				<button type="submit">Login</button>
-			</div>
+			<button type="submit">Login</button>
 		</form>
 	</div>
 </div>
@@ -31,11 +29,20 @@ export default defineComponent({
 		justify-content: center;
 	}
 
+	form {
+		display: flex;
+		align-items: center;
+		
+	}
+
 	.login-box {
 		background: darkblue;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: stretch;
+
+		padding: 4rem;
+
 		.input-box {
 			display: flex;
 			flex-direction: column;
@@ -48,17 +55,14 @@ export default defineComponent({
 				border-radius: 1rem;
 			}
 		}
-		.button-box {
-			display: flex;
-			justify-content: space-around;
-			margin: 0.5rem 0;
-			button {
-				color: white;
-				width: 5rem;
-				padding: 0.7rem;
-				background-color: rgb(219, 94, 94);
-				border-radius: 1rem;
-			}
+		button {
+			color: white;
+			width: 7rem;
+			height: 100%;
+			padding: 0.7rem;
+			background-color: rgb(219, 94, 94);
+			border-radius: 1rem;
+			margin-left: 1rem;
 		}
 	}
 
