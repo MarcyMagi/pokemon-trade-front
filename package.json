@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview --port 5050",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "deploy": "deploy.sh"
+    "deploy": "deploy.bat"
   },
   "dependencies": {
     "vue": "^3.2.29",

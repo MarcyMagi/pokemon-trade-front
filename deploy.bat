@@ -1,7 +1,4 @@
-
-set -e
-
-npm run build
+CMD /C npm run build
 
 cd dist
 
@@ -11,6 +8,6 @@ git commit -m 'deploy'
 
 git push -f https://github.com/MarcyMagi/pokemon-trade-front.git master:gh-pages
 
-cd -
+cd ..
 
-git re --cached dist
+git rm --cached dist

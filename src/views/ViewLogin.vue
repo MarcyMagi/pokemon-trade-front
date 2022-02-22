@@ -32,6 +32,8 @@ export default defineComponent({
 	form {
 		display: flex;
 		align-items: center;
+		padding: 2rem;
+		background-color: blue;
 		
 	}
 
@@ -63,6 +65,10 @@ export default defineComponent({
 			background-color: rgb(219, 94, 94);
 			border-radius: 1rem;
 			margin-left: 1rem;
+			&:hover {
+				cursor: pointer;
+				background-color: red;
+			}
 		}
 	}
 
