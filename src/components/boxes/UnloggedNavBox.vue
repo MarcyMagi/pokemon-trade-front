@@ -3,12 +3,6 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
 	name: 'LoggedNavBox',
-	emits: ['onLoginStateChange'],
-	methods: {
-		changeLoginState() {
-			this.$emit('onLoginStateChange', true)
-		}
-	}
 })
 
 </script>
@@ -17,7 +11,7 @@ export default defineComponent({
 	<nav class="wrapper">
 		<router-link to="/login"> Log In
 		</router-link>
-		<router-link to="/" @click="changeLoginState"> Sign Up
+		<router-link to="/signup"> Sign Up
 		</router-link>
 	</nav>
 </template>
